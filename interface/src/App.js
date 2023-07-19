@@ -134,15 +134,15 @@ const App = ({ classes }) => {
         <div className={classes.root}>
             <div className={classes.title}>
                 <Typography variant="h3">
-                    Text-to-image Playground <span role="img" aria-label="sparks-emoji">✨</span>
+                    Prompt-to-image generator <span role="img" aria-label="sparks-emoji">✨</span>
                 </Typography>
             </div>
 
-            {!validBackendUrl && <div>
-                <Typography variant="body1" color="textSecondary">
-                    Put your backend URL to start
-                </Typography>
-            </div>}
+            // {!validBackendUrl && <div>
+            //     <Typography variant="body1" color="textSecondary">
+            //         Put your backend URL to start
+            //     </Typography>
+            // </div>}
 
             <div className={classes.playgroundSection}>
                 <div className={classes.settingsSection}>
@@ -158,13 +158,13 @@ const App = ({ classes }) => {
                             <TextPromptInput enterPressedCallback={enterPressedCallback} promptText={promptText} setPromptText={setPromptText}
                                 disabled={isFetchingImgs || !validBackendUrl} />
 
-                            <div className={classes.getInspiredText}>
-                                <Typography variant="body2">
-                                    <Link href="https://lexica.art/?q=steve+jobs" underline="none" target="_blank" rel="noopener noreferrer">
-                                        Get inspired
-                                        </Link>
-                                </Typography>
-                            </div>
+                            // <div className={classes.getInspiredText}>
+                            //     <Typography variant="body2">
+                            //         <Link href="https://lexica.art/?q=steve+jobs" underline="none" target="_blank" rel="noopener noreferrer">
+                            //             Get inspired
+                            //             </Link>
+                            //     </Typography>
+                            // </div>
 
                             <FormControl className={classes.imagesPerQueryControl}
                                 variant="outlined">
